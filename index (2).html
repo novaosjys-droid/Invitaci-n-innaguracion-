@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Atelier - Invitación a la Inauguración</title>
+    <!-- Fuentes elegantes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #08070B;
+            background: radial-gradient(circle at center, #1c1827 0%, #080708 100%);
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cinematic-card {
+            background: rgba(18, 15, 23, 0.85);
+            max-width: 480px;
+            width: 100%;
+            border-radius: 20px;
+            padding: 50px 30px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9), 0 0 25px rgba(212, 175, 55, 0.15);
+            backdrop-filter: blur(12px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cinematic-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #D4AF37, #FFF, #D4AF37, transparent);
+        }
+
+        .studio-tag {
+            font-family: 'Cinzel', serif;
+            font-size: 11px;
+            letter-spacing: 6px;
+            color: #D4AF37;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 30px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+            font-weight: 600;
+            text-shadow: 0 2px 15px rgba(0,0,0,0.8);
+        }
+
+        .subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: #C5A059;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+            margin: 0 auto 30px auto;
+        }
+
+        .teaser-text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #E0E0E0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .highlight-phrase {
+            font-family: 'Cinzel', serif;
+            color: #D4AF37;
+            font-size: 16px;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .big-status {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 35px;
+            background: linear-gradient(180deg, #FFFFFF 30%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-vip {
+            display: inline-block;
+            background: transparent;
+            color: #D4AF37;
+            border: 1px solid #D4AF37;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 16px 32px;
+            border-radius: 4px;
+            transition: all 0.4s ease;
+            font-weight: 500;
+        }
+
+        .btn-vip:hover {
+            background: #D4AF37;
+            color: #080708;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #888;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cinematic-card">
+        <div class="studio-tag">Invitación Exclusiva</div>
+        <h1>LUMINA ATELIER</h1>
+        <div class="subtitle">Nail Spa & Beauty Concept</div>
+        
+        <div class="divider"></div>
+
+        <p class="teaser-text">
+            <span class="highlight-phrase">¡ESTÁS INVITAD@ A NUESTRA INAUGURACIÓN!</span>
+            Queremos que seas parte fundamental del gran inicio de nuestro spa de uñas. Prepárate para vivir una experiencia inolvidable.
+        </p>
+
+        <div class="big-status">MUY PRONTO</div>
+
+        <!-- Reemplaza TU_NUMERO por tu número con código de país (ejemplo: 573001234567) -->
+        <a href="https://wa.me/573052775278?text=¡Hola!%20Recibí%20la%20invitación%20y%20quiero%20confirmar%20mi%20asistencia%20para%20la%20inauguración%20" class="btn-vip">
+            Confirmar mi asistencia
+        </a>
+
+        <div class="footer">
+            Revelaremos el lugar y la fecha muy pronto.
+        </div>
+    </div>
+
+</body>
+</html>
